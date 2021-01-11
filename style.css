@@ -6,10 +6,29 @@ main {
   /* display: flex;
   flex-wrap: wrap;
   justify-content: space-around;; */
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
-  grid-gap: 1rem;
+  grid-gap: 1rem; */
+}
+
+@media only screen and (max-width: 375px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-items: space-around;
+    grid-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    grid-gap: 1rem;
+  }
 }
 
 header {
