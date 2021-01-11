@@ -1,3 +1,14 @@
+body {
+  background-color: mediumturquoise;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  grid-gap: 1rem;
+}
+
 header {
   text-align: center;
   padding: 2rem;
@@ -15,6 +26,8 @@ header {
 .task-1 {
   border: solid;
   padding: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 .task-1 p {
   border: dotted;
@@ -24,6 +37,10 @@ header {
 .task-2 {
   border: solid;
   padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  grid-gap: 2rem;
 }
 .task-2 p {
   border: dotted;
@@ -33,9 +50,11 @@ header {
 .task-3 {
   border: solid;
   padding: 1rem;
+  background-color: mediumvioletred;
 }
 .task-3 p {
   padding: 1rem;
+  background-color: mediumvioletred;
 }
 
 .task-4 {
@@ -44,14 +63,26 @@ header {
 }
 .task-4 p {
   padding: 1rem;
+  font-family: 'Hachi Maru Pop', cursive;
+  color: brown;
 }
 
 .task-5 {
   border: solid;
   padding: 1rem;
   margin-bottom: 1rem;
+
 }
 
+.annoying-box {
+  display: flex;
+  justify-content: center;
+}
+
+.annoying-box img {
+  height: 30%;
+  width: 20%;
+}
 .task-6 {
   border: solid;
   padding: 1rem;
